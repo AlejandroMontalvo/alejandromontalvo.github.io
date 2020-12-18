@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Alejandro Montalvo" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>Alejandro Montalvo</title>
+        <link style="background-color: red;" rel="shortcut icon" type="image/jpg" href="https://cdn.glitch.com/8a4b6e05-cea3-4c3b-8913-b9b26befef2f%2Fqr-code-sharp.svg?v=1608300933110"/>
+  </head>
+  <body>
+    <div id="nav-bar">
+      <a id="logo" href="index.html">AM</a>
+      <div id="nav-list">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/AlejandroMontalvo" target="_blank">Github</a>
+        <a href="resume.html">Resume</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+      <ion-icon
+        id="mobile-menu"
+        onclick="myFunction()"
+        name="menu-sharp"
+      ></ion-icon>
+      <div id="mobile-nav">
+        <a href="index.html">Home</a><br />
+        <a href="https://github.com/AlejandroMontalvo" target="_blank">Github</a><br />
+        <a href="resume.html">Resume</a><br />
+        <a class="active" href="contact.html">Contact</a><br />
+      </div>
+    </div>
+    <form
+      class="contact-form"
+      accept-charset="utf-8"
+      action="https://formsubmit.co/amontalvowps@gmail.com"
+      method="POST"
+    >
+      <label for="name">Full Name<a style="color: red">*</a></label
+      ><br />
+      <input
+        class="contact-input"
+        name="name"
+        placeholder="John Doe"
+        required
+        pattern=".*\S.*"
+      /><br />
+      <label for="email">Email<a style="color: red">*</a></label
+      ><br />
+      <input
+        class="contact-input"
+        type="email"
+        name="email"
+        placeholder="johndoe@example.com"
+        required
+        pattern=".*\S.*"
+      /><br />
+      <label for="message"
+        ><a>Message<a style="color: red">*</a></a></label
+      ><br />
+      <textarea
+        class="contact-textarea"
+        rows="8"
+        name="message"
+        placeholder="Enter your message here"
+        required
+        pattern=".*\S.*"
+      ></textarea
+      ><br />
+      <button class="contact-submit">Send</button>
+    </form>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </body>
+</html>
